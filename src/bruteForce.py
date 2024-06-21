@@ -8,6 +8,6 @@ def bruteForceRec(unit_list, trait_list, index):
 	return bruteForce(unit_list, trait_list, index + 1)
 
 
-def bruteForce(unit_list, trait_list):
+def bruteForce(unit_list):
 
-	return bruteForceRec(unit_list, trait_list, 0)
+	return bruteForceRec(unit_list, [], 0)
