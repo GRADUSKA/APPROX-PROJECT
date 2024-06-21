@@ -1,5 +1,5 @@
 class Perso:
-    # Creation du personne avec le nom et ses differents traits
+    # Creation d'un personnage avec le nom et ses differents traits
     def __init__(self, name, traits):
         self.name = name
         self.traits = traits
