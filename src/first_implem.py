@@ -18,12 +18,12 @@ def compute(G):
     while G.edges():
         node = None
         for n in G.nodes():
-            if node == None || len(G.neighbors(n)) < len(G.neighbors(node):
+            if node == None or len(G.neighbors(n)) < len(G.neighbors(node)):
                 node = n
         if len(G.neighbors(node)) != 0:
             other = None
             for n in G.neighbors(node):
-                if other == None || len(G.neighbors(n)) < len(G.neighbors(other):
+                if other == None or len(G.neighbors(n)) < len(G.neighbors(other)):
                     other = n
             result += 1
             G.remove_node(node)
@@ -31,3 +31,6 @@ def compute(G):
         else:
             G.remove_node(node)
     return result
+
+def approx(all):
+    return compute(toGraph(all))
