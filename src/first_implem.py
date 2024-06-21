@@ -20,7 +20,7 @@ def compute(G):
         for n in G.nodes():
             if node == None or len([a for a in G.neighbors(n)]) < len([b for b in G.neighbors(node)]):
                 node = n
-        if len(G.neighbors(node)) != 0:
+        if len([e for e in G.neighbors(node)]) != 0:
             other = None
             for n in G.neighbors(node):
                 if other == None or len([c for c in G.neighbors(n)]) < len([d for d in G.neighbors(other)]):
