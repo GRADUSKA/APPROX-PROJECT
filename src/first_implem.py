@@ -10,11 +10,11 @@ def toGraph(C):
     G.add_nodes_from(T)
     for champion in C:
         if G.get_edge_data(champion.traits[0], champion.traits[1]) is None:
-            G.add_edge(champion.traits[0], champion.traits[1])
+            G.add_edge(champion.traits[0], champion.traits[1], champ=champion)
     return G
 
 def compute(G):
-    result = 0
+    result = []
     while G.edges():
         node = None
         for n in G.nodes():
@@ -25,7 +25,7 @@ def compute(G):
             for n in G.neighbors(node):
                 if other == None or len(G.neighbors(n)) < len(G.neighbors(other)):
                     other = n
-            result += 1
+            result.append(G.get_edge_data(champion.traits[0], champion.traits[1])['champ'])
             G.remove_node(node)
             G.remove_node(other)
         else:
