@@ -11,8 +11,9 @@ un algorithme exact utilisant un brute force et un algorithme d'approximation.
 Le projet est organisé de la manière suivante :
 
 - `main.py` : Script principal contenant l'implémentation des algorithmes.
-- `input` : Fichier d'entrée contenant les données des personnages.
-- `README.md` : Ce fichier, contenant des instructions sur la manière d'exécuter le projet.
+- `input` : Fichier d'entrée contenant les données des personnages (given file).
+- `README` : Ce fichier, contenant des instructions sur la manière d'exécuter le projet.
+- `src` : Dossier contenant le source code.
 
 ## Prérequis
 
@@ -29,13 +30,13 @@ Vous pouvez le télécharger depuis le site officiel [Python.org](https://www.py
 
 ### Format du Fichier d'Entrée
 
-Le fichier d'entrée `input` doit contenir les données des personnages, chaque ligne représentant un personnage avec d'abord son nom puis ses traits. 
+Le fichier d'entrée doit contenir les données des personnages, chaque ligne représentant un personnage avec d'abord son nom puis ses traits. 
 Par exemple :
 
 # Debut du fichier:
-Ornn Behemoth Forge
-ChoGath Behemoth Void
-Kindred Phantom Wolf
+John Behemoth Forge
+Smith Behemoth Void
+Zorro Phantom Wolf
 # Fin du fichier
 
 ### Exécution du Script
