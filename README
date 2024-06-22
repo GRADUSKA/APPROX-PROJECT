@@ -1,1 +1,48 @@
-This project is a modelisation and an approximation of the maximum of "Exalte" in the video game TFT depending on an input
+# Projet Approx - Teamfight Tactics (TFT) - Exaltés
+
+## Description
+
+Ce projet vise à résoudre un problème inspiré du jeu vidéo Teamfight Tactics (TFT), où l'objectif est de déterminer le nombre maximum d'unités
+ pouvant être exaltées simultanément sous certaines contraintes. Deux algorithmes ont été implémentés : 
+un algorithme exact utilisant un brute force et un algorithme d'approximation.
+
+## Structure du Projet
+
+Le projet est organisé de la manière suivante :
+
+- `main.py` : Script principal contenant l'implémentation des algorithmes.
+- `input` : Fichier d'entrée contenant les données des personnages.
+- `README.md` : Ce fichier, contenant des instructions sur la manière d'exécuter le projet.
+
+## Prérequis
+
+- Python 3.x
+
+### Instructions pour l'Utilisation
+
+1. Télécharger et Installer Python 3.x : Assurez-vous d'avoir Python 3.x installé sur votre machine. 
+Vous pouvez le télécharger depuis le site officiel [Python.org](https://www.python.org/).
+2. Préparer le Fichier d'Entrée : Créez un fichier nommé `input` avec les données des personnages selon le format spécifié.
+3. Exécuter le Script : Lancez le script principal `main.py` à partir de la ligne de commande en utilisant la commande `python main.py`.
+
+## Instructions
+
+### Format du Fichier d'Entrée
+
+Le fichier d'entrée `input` doit contenir les données des personnages, chaque ligne représentant un personnage avec d'abord son nom puis ses traits. 
+Par exemple :
+
+# Debut du fichier:
+Ornn Behemoth Forge
+ChoGath Behemoth Void
+Kindred Phantom Wolf
+# Fin du fichier
+
+### Exécution du Script
+
+1. Assurez-vous que Python 3.x est installé sur votre machine.
+2. Placez le fichier avec les noms des personages ainsi que leurs traits dans le même répertoire que `main.py`.
+3. Exécutez le script principal :
+	python3 main.py
+	Le script affichera: "Entrez le nom de l'input:"
+	rentrez le nom du fichier avec l'input puis faites entree.
