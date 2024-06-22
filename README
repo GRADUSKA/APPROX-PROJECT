@@ -10,7 +10,7 @@ un algorithme exact utilisant un brute force et un algorithme d'approximation.
 
 Le projet est organisé de la manière suivante :
 
-- `main.py` : Script principal contenant l'implémentation des algorithmes.
+- `main.py` : Script principal contenant l'appel aux fonctions contenues dans src/.
 - `input` : Fichier d'entrée contenant les données des personnages (given file).
 - `README` : Ce fichier, contenant des instructions sur la manière d'exécuter le projet.
 - `src` : Dossier contenant le source code.
@@ -18,13 +18,21 @@ Le projet est organisé de la manière suivante :
 ## Prérequis
 
 - Python 3.x
+- package networkx (pip install networkx)
 
 ### Instructions pour l'Utilisation
 
 1. Télécharger et Installer Python 3.x : Assurez-vous d'avoir Python 3.x installé sur votre machine. 
 Vous pouvez le télécharger depuis le site officiel [Python.org](https://www.python.org/).
-2. Préparer le Fichier d'Entrée : Créez un fichier  avec les données des personnages selon le format spécifié ou faites python3 generate_data.py et mettez le contenu affiche dans un fichier.
-3. Exécuter le Script : Lancez le script principal `main.py` à partir de la ligne de commande en utilisant la commande `python main.py` puis indiquez le nom de votre fichier.
+2. Préparer le Fichier d'Entrée : Créez un fichier  avec les données des personnages selon le format spécifié 
+ou faites python3 generate_data.py et mettez le contenu affiche dans un fichier.
+Grammaire de l’input :
+S → Id_L
+Id → [a-zA-Z]+
+L → T | T_L
+T → [a-zA-Z0-9]+
+3. Exécuter le Script : Lancez le script principal `main.py` à partir de la ligne de commande en utilisant la commande `python main.py` 
+puis indiquez le nom de votre fichier.
 
 ## Instructions
 
