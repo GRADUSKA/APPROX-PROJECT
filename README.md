@@ -41,11 +41,11 @@ puis indiquez le nom de votre fichier.
 Le fichier d'entrée doit contenir les données des personnages, chaque ligne représentant un personnage avec d'abord son nom puis ses traits. 
 Par exemple :
 
-# Debut du fichier:
+#### Debut du fichier:
 John Behemoth Forge
 Smith Behemoth Void
 Zorro Phantom Wolf
-# Fin du fichier
+#### Fin du fichier
 
 ### Exécution du Script
 
