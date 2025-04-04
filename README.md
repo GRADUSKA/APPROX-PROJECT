@@ -26,12 +26,14 @@ Le projet est organisé de la manière suivante :
 Vous pouvez le télécharger depuis le site officiel [Python.org](https://www.python.org/).
 2. Préparer le Fichier d'Entrée : Créez un fichier  avec les données des personnages selon le format spécifié 
 ou faites python3 generate_data.py et mettez le contenu affiche dans un fichier.
-Grammaire de l’input :
+`Grammaire de l’input` :
+```
 S → Id_L
 Id → [a-zA-Z]+
 L → T | T_L
 T → [a-zA-Z0-9]+
-3. Exécuter le Script : Lancez le script principal `main.py` à partir de la ligne de commande en utilisant la commande `python main.py` 
+```
+4. Exécuter le Script : Lancez le script principal `main.py` à partir de la ligne de commande en utilisant la commande `python main.py` 
 puis indiquez le nom de votre fichier.
 
 ## Instructions
@@ -40,12 +42,11 @@ puis indiquez le nom de votre fichier.
 
 Le fichier d'entrée doit contenir les données des personnages, chaque ligne représentant un personnage avec d'abord son nom puis ses traits. 
 Par exemple :
-
-#### Debut du fichier:
+```
 John Behemoth Forge
 Smith Behemoth Void
 Zorro Phantom Wolf
-#### Fin du fichier
+```
 
 ### Exécution du Script
 
